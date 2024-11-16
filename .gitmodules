@@ -22,3 +22,6 @@
 [submodule "assets/texture_packer"]
 	path = assets/texture_packer
 	url = git@github.com:py-garden/texture_packer.git
+[submodule "src/graphics/texture_packer"]
+	path = src/graphics/texture_packer
+	url = git@github.com:cpp-toolbox/texture_packer.git
