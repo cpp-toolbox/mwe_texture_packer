@@ -1,2 +1,0 @@
-# mwe_texture_packer
-A texture packer is a tool which puts a bunch of textures into a large texture, it's not called a texture atlas, as it may in fact pack texture atlases into the packed texture, all packed textures will have the same dimensions so that they can be loaded into opengl (focusing on 3.3) and then drawn using texture arrays, so that we don't have to do the classic `bind texture -> draw` over and over, and be able to do it in one draw call.
