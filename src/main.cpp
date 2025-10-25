@@ -16,10 +16,6 @@
 
 int main() {
 
-    const auto textures_directory = std::filesystem::path("assets");
-    std::filesystem::path output_dir = std::filesystem::path("assets") / "packed_textures";
-    int container_side_length = 1024;
-
     std::unordered_map<SoundType, std::string> sound_type_to_file = {
         {SoundType::UI_HOVER, "assets/sounds/hover.wav"},
         {SoundType::UI_CLICK, "assets/sounds/click.wav"},
@@ -31,6 +27,10 @@ int main() {
         {ShaderType::ABSOLUTE_POSITION_WITH_COLORED_VERTEX, ShaderType::TEXTURE_PACKER_CWL_V_TRANSFORMATION_UBOS_1024},
         sound_type_to_file);
 
+    const auto textures_directory = std::filesystem::path("assets");
+    std::filesystem::path output_dir = std::filesystem::path("assets") / "packed_textures";
+    int container_side_length = 4096;
+
     TexturePacker texture_packer(textures_directory, output_dir, container_side_length);
 
     // TODO: I don't like having this thing around
@@ -39,11 +39,14 @@ int main() {
     tbx_engine.shader_cache.set_uniform(ShaderType::TEXTURE_PACKER_CWL_V_TRANSFORMATION_UBOS_1024,
                                         ShaderUniformVariable::PACKED_TEXTURE_BOUNDING_BOXES, 1);
 
-    // TODO: was about to pass in the two things
     auto lightbulb = texture_packer_model_loading::parse_model_into_tig(
-        rp, "assets/models/lightbulb/lightbulb.obj", texture_packer,
+        // rp, "assets/models/lightbulb/lightbulb.obj", texture_packer,
+        rp, "assets/models/spider_crossings/spider_crossings.obj", texture_packer,
+        // rp, "assets/models/dm_turbine/dm_turbine.obj", texture_packer,
         tbx_engine.batcher.texture_packer_cwl_v_transformation_ubos_1024_shader_batcher.object_id_generator,
         tbx_engine.batcher.texture_packer_cwl_v_transformation_ubos_1024_shader_batcher.ltw_object_id_generator);
+
+    // lightbulb.transform.set_scale(0.01);
 
     auto [arx, ary] = tbx_engine.window.get_aspect_ratio_in_simplest_terms();
 

@@ -1,0 +1,222 @@
+# ClfPilr3
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_0.tga
+
+# c1a4_c1c
+newmtl material_1
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_1.tga
+
+# ralPanBk
+newmtl material_2
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_2.tga
+
+# ClifCon2
+newmtl material_3
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_3.tga
+
+# M_RUST4
+newmtl material_4
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_4.tga
+
+# Rtrim1a
+newmtl material_5
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_5.tga
+
+# Pavmtcr2
+newmtl material_6
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_6.tga
+
+# MIRONBR1
+newmtl material_7
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_7.tga
+
+# ClifRok2
+newmtl material_8
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_8.tga
+
+# hash-ice-32
+newmtl material_9
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_9.tga
+
+# MysMetl3
+newmtl material_10
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_10.tga
+
+# c1a4tnnl1c
+newmtl material_11
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_11.tga
+
+# tnnl_swrc1
+newmtl material_12
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_12.tga
+
+# babtech9d
+newmtl material_13
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_13.tga
+
+# black
+newmtl material_14
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_14.tga
+
+# ~light5e
+newmtl material_15
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_15.tga
+
+# ~light5a
+newmtl material_16
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_16.tga
+
+# Girderm3
+newmtl material_17
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_17.tga
+
+# MysIrn11
+newmtl material_18
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_18.tga
+
+# Awall1
+newmtl material_19
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_19.tga
+
+# rClifLt1
+newmtl material_20
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_20.tga
+
+# ClfPilr2
+newmtl material_21
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_21.tga
+
+# hzpanel1
+newmtl material_22
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_22.tga
+
+# Irnwall6
+newmtl material_23
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_23.tga
+
+# Xlight2
+newmtl material_24
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_24.tga
+
+# NaziBox4
+newmtl material_25
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_25.tga
+
+# Xlight3x
+newmtl material_26
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_26.tga
+
+# crete3_wall01
+newmtl material_27
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_27.tga
+
+# duct_flr02a
+newmtl material_28
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_28.tga
+
+# metal_wall05c
+newmtl material_29
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_29.tga
+
+# {grate3b
+newmtl material_30
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_30.tga
+
+# {grate4a
+newmtl material_31
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_31.tga
+
+# water4b
+newmtl material_32
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_32.tga
+
+# !waterblue
+newmtl material_33
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_33.tga
+
+# yellow
+newmtl material_34
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_34.tga
+
+# red
+newmtl material_35
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_35.tga
+
+# fade
+newmtl material_36
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd dm-turbine_material_36.tga
+
