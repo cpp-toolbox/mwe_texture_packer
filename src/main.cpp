@@ -16,6 +16,8 @@
 
 int main() {
 
+    // global_logger.add_file_sink("logs.txt");
+
     std::unordered_map<SoundType, std::string> sound_type_to_file = {
         {SoundType::UI_HOVER, "assets/sounds/hover.wav"},
         {SoundType::UI_CLICK, "assets/sounds/click.wav"},
@@ -52,6 +54,7 @@ int main() {
     tbx_engine.window.disable_cursor();
 
     auto tick = [&](double dt) {
+
         auto [arx, ary] = tbx_engine.window.get_aspect_ratio_in_simplest_terms();
 
         tbx_engine.shader_cache.set_uniform(ShaderType::ABSOLUTE_POSITION_WITH_COLORED_VERTEX,
@@ -68,9 +71,7 @@ int main() {
         tbx_engine.update_camera_position_with_default_movement(dt);
 
         tbx_engine.draw_chosen_engine_stats();
-
         tbx_engine.process_and_queue_render_input_graphics_sound_menu();
-
         tbx_engine.batcher.texture_packer_cwl_v_transformation_ubos_1024_shader_batcher.queue_draw(lightbulb);
 
         tbx_engine.batcher.texture_packer_cwl_v_transformation_ubos_1024_shader_batcher.draw_everything();
