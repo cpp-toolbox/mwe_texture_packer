@@ -43,9 +43,12 @@ int main() {
     tbx_engine.shader_cache.set_uniform(ShaderType::TEXTURE_PACKER_CWL_V_TRANSFORMATION_UBOS_1024,
                                         ShaderUniformVariable::PACKED_TEXTURE_BOUNDING_BOXES, 1);
 
+    auto path_to_model =
+        tbx_engine.configuration.get_value("general", "model").value_or("assets/models/lightbulb/lightbulb.obj");
+
     auto lightbulb = texture_packer_model_loading::parse_model_into_tig(
-        // rp, "assets/models/lightbulb/lightbulb.obj", texture_packer,
-        rp, "assets/models/spider_crossings/spider_crossings.obj", texture_packer,
+        rp, path_to_model, texture_packer,
+        // rp, "assets/models/spider_crossings/spider_crossings.obj", texture_packer,
         // rp, "assets/models/dm_turbine/dm_turbine.obj", texture_packer,
         tbx_engine.batcher.texture_packer_cwl_v_transformation_ubos_1024_shader_batcher.object_id_generator,
         tbx_engine.batcher.texture_packer_cwl_v_transformation_ubos_1024_shader_batcher.ltw_object_id_generator);
@@ -54,11 +57,10 @@ int main() {
     tbx_engine.window.disable_cursor();
 
     auto tick = [&](double dt) {
-
         auto [arx, ary] = tbx_engine.window.get_aspect_ratio_in_simplest_terms();
 
         tbx_engine.shader_cache.set_uniform(ShaderType::ABSOLUTE_POSITION_WITH_COLORED_VERTEX,
-                                        ShaderUniformVariable::ASPECT_RATIO, glm::vec2(arx, ary));
+                                            ShaderUniformVariable::ASPECT_RATIO, glm::vec2(arx, ary));
 
         tbx_engine.shader_cache.set_uniform(ShaderType::TEXTURE_PACKER_CWL_V_TRANSFORMATION_UBOS_1024,
                                             ShaderUniformVariable::CAMERA_TO_CLIP,
